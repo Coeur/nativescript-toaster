@@ -1,0 +1,24 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.MYCocoaPodsApp",
+    "tns-android": {
+      "version": "5.3.0"
+    },
+    "tns-ios": {
+      "version": "5.3.1"
+    }
+  },
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "dependencies": {
+    "my-plugin": "file:../my-plugin",
+    "nativescript-theme-core": "~1.0.4",
+    "tns-core-modules": "~5.3.0"
+  },
+  "devDependencies": {
+    "nativescript-dev-webpack": "~0.21.0"
+  },
+  "gitHead": "c175016cf900d406d2428bb6c4fcbb62093fb351",
+  "readme": "NativeScript Application"
+}
