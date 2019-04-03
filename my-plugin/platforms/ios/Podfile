@@ -1,1 +1,1 @@
-pod 'Toaster'
+pod 'Toaster', :git => 'https://github.com/EddyVerbruggen/Toaster'

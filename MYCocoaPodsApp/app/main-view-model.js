@@ -14,6 +14,10 @@ function createViewModel() {
     viewModel.message = getMessage(viewModel.counter);
 
     viewModel.onTap = () => {
+
+        var t = Toast.alloc().initWithTextDelayDuration("Hello Toaster", 0, 2.0);
+        t.show();
+
         viewModel.counter--;
         viewModel.set("message", getMessage(viewModel.counter));
     };
