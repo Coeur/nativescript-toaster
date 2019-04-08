@@ -15,8 +15,12 @@ function createViewModel() {
 
     viewModel.onTap = () => {
 
-        var t = Toast.alloc().initWithTextDelayDuration("Hello Toaster", 0, 2.0);
-        t.show();
+        (new Toast("Hello Toaster", 0, 2.0)).show();
+        let alternateIconName = UIApplication.sharedApplication.alternateIconName != "AppIcon-2" ? "AppIcon-2" : "AppIcon";
+        UIApplication.sharedApplication.setAlternateIconNameCompletionHandler(alternateIconName, function(error) {
+            console.log(error);
+            (new Toast("New Icon!", 0, 2.0)).show();
+        });
 
         viewModel.counter--;
         viewModel.set("message", getMessage(viewModel.counter));
